@@ -11,4 +11,13 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Welcome in the IIITN Community , the issues will be addresssed Properly on a periodic basis'
         pr-message: 'Welcome to the IIITN Community , the changes have been made to the Branch repository.'
+  label:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/labeler@v2
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+  
         
